@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-gothic: var(--font-gothic);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.triangle-duo {
+  display: flex;
+  flex-shrink: 0;
+  height: 40vh;
+  margin-right: -40vh;
+  margin-top: -6vh;
+  width: 79.9vh;
+  opacity: 0.2;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.triangle {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.2;
+  flex-grow: 0;
+  margin-right: -25%;
+  width: 50%;
+  width: auto;
+}
+
+.triangle-line {
+  display: flex;
+  flex-grow: 0;
+  flex-wrap: nowrap;
+}
+
+.triangle-line:nth-child(2n) {
+  margin-left: -20vh;
 }
